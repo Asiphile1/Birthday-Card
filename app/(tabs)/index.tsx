@@ -139,11 +139,12 @@ const styles = StyleSheet.create({
   },
   fontButton: {
     width: "35%",
+    // gap: 10,
     padding: 10,
     borderRadius: 5,
-    backgroundColor: "#FFC107",
+    backgroundColor: "#FDD7E4",
     alignItems: "center",
-    marginHorizontal: 5,
+    marginHorizontal: 60,
   },
   fontButtonText: {
     color: "#000",
@@ -156,6 +157,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: "#2196F3",
     alignItems: "center",
+    alignSelf: "center",
   },
   addTextButtonText: {
     color: "#fff",
@@ -163,10 +165,13 @@ const styles = StyleSheet.create({
   },
   imageButton: {
     marginTop: 10,
+
     padding: 12,
+    width: "30%",
     borderRadius: 5,
     backgroundColor: "#4CAF50",
     alignItems: "center",
+    alignSelf: "center",
   },
   imageButtonText: {
     color: "#fff",
