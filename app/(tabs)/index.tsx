@@ -50,7 +50,7 @@ export default function App() {
       
       <TextInput
         style={styles.input}
-        placeholder="Enter your message"
+        placeholder="Write a sweet message to the birthday BOY or GIRL"
         onChangeText={(value) => setText(value)}
         value={text}
       />
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     padding: 20,
     marginBottom: 20,
-    backgroundColor: "#fff",
+    backgroundColor: "#E8AD",
   },
   cardText: {
     color: "#333",
@@ -114,12 +114,12 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   input: {
-    borderWidth: 1,
-    borderColor: "#ccc",
-    padding: 10,
-    borderRadius: 5,
-    marginBottom: 10,
-    backgroundColor: "#fff",
+    borderWidth: 2,
+    borderColor: "#FF00FF",
+    padding: 20,
+    borderRadius: 30,
+    marginBottom: 20,
+    backgroundColor: "#FDD7E4",
   },
   controls: {
     flexDirection: "row",
@@ -127,13 +127,25 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   imageButton: {
-    padding: 10,
-    backgroundColor: "orange",
+    borderWidth: 2,
+    borderColor: "#FF00FF",
+    padding: 20,
+    borderRadius: 30,
+    backgroundColor: "#FDD7E4",
     borderRadius: 5,
     alignItems: "center",
   },
   imageButtonText: {
-    color: "#fff",
+    color: "#000",
     fontWeight: "bold",
+  },
+  Button: {
+    borderWidth: 2,
+    borderColor: "#FF00FF",
+    padding: 20,
+    borderRadius: 30,
+    backgroundColor: "#FDD7E4",
+    borderRadius: 5,
+    alignItems: "center",
   },
 });
