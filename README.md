@@ -1,50 +1,103 @@
-# Welcome to your Expo app 👋
+# Birthday Card Creation App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a React Native app that allows users to create custom birthday cards by adding images, text, and adjusting font sizes. The app includes features such as selecting an image from the gallery, editing text, and formatting the card for a personalized birthday greeting.
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+* Introduction
+* Features
+* Installation
+* Usage
+* App Structure
+* Libraries and Tools Used
+* License
 
-   ```bash
-   npm install
+## Introduction
+
+The Birthday Card Creation app enables users to design and customize a birthday card. Users can:
+
+* Add a custom text message to the card.
+* Adjust the font size of the text.
+* Upload an image from their device's gallery.
+* View and modify the card content in real-time.
+
+This project is built using React Native and Expo to provide a smooth development and deployment experience for mobile apps.
+
+## Features
+
+* Create a Card: Users can create a birthday card with a personalized message.
+* Image Picker: Select and display an image from the user's device.
+* Text Editor: Add and edit custom text on the card.
+* Font Size Adjustment: Increase or decrease the font size of the text.
+* Responsive Layout: The app is designed with a flexible and responsive layout that works well on both iOS and Android.
+
+
+## Installation
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+1. Node.js:
+ * Download Node.js at https://nodejs.org/en/download/package-manager
+
+2. Expo CLI: If you haven't installed Expo CLI, you can do so by running:
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+   npm install -g expo-cli
    ```
+3. Expo Go: Install the Expo Go app on your mobile device from App Store or Google Play Store.
 
-In the output, you'll find options to open the app in a
+## Steps to Install
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Clone the repository:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
+git clone https://github.com/your-username/BirthdayCard.git
+cd BirthdayCard
+```
+2. Install the dependencies:
+```
+npm install
+```
+3. Start the Expo project:
+```
+expo start
+```
+4. Scan the QR code displayed in the terminal or on the web browser with Expo Go to run the app on your device.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Usage
 
-## Learn more
+Once the app is running, you'll be able to:
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Create a Birthday Card: The app will show a "Create Your Birthday Card" screen with the following options:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* Add Text: Type a custom message for the birthday card. You can adjust the font size using the font controls.
+* Add an Image: Tap the "Add an Image" button to choose an image from your device's gallery.
+* Increase/Decrease Font Size: Use the buttons to adjust the font size of the message on the card.
 
-## Join the community
+2. Customize Your Card: The text and image you add will be displayed on the card. You can continue to edit the text and font size until you're satisfied with the result.
 
-Join our community of developers creating universal apps.
+3. Preview and Share: Once you have finished customizing your birthday card, you can save or share it with friends or family to celebrate the special occasion.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## App Structure
+
+Here's a breakdown of the main parts of the app:
+
+* App.js: This is the main entry point for the app. It contains the logic for rendering the card, handling text input, and picking an image.
+* Styles: Styles are written using StyleSheet.create() and include custom styling for various elements, such as buttons, card layout, text 
+ input, etc.
+* Image Picker: Uses expo-image-picker to allow users to select images from their device's gallery.
+
+
+## Libraries and Tools Used
+
+* React Native: A framework for building native mobile apps using JavaScript and React.
+* Expo: A toolchain for building React Native apps without needing to configure native code.
+* expo-image-picker: A library that allows users to select images from their device's media library.
+* React: The JavaScript library for building user interfaces.
+* React Native Components: Various components from react-native, such as View, Text, TextInput, and TouchableOpacity.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+screenshots
