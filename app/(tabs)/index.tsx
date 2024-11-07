@@ -39,7 +39,6 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.title}>Create Your Birthday Card</Text>
 
-     
       <View style={styles.card}>
         {image && <Image source={{ uri: image }} style={styles.cardImage} />}
         <Text style={[styles.cardText, { fontSize: fontSize }]}>
@@ -47,7 +46,6 @@ export default function App() {
         </Text>
       </View>
 
-      
       <TextInput
         style={styles.input}
         placeholder="Write a sweet message to the birthday BOY or GIRL"
@@ -55,29 +53,31 @@ export default function App() {
         value={text}
       />
 
-      
       <View style={styles.controls}>
-        <Button
-          title="Increase Font"
+        <TouchableOpacity
+          style={styles.fontButton}
           onPress={() => setFontSize(fontSize + 2)}
-        />
-        <Button
-          title="Decrease Font"
+        >
+          <Text style={styles.fontButtonText}>Increase Font</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.fontButton}
           onPress={() => setFontSize(fontSize - 2)}
-        />
+        >
+          <Text style={styles.fontButtonText}>Decrease Font</Text>
+        </TouchableOpacity>
       </View>
 
-      
-      <Button title="Add Text" onPress={addTextToCard} />
+      <TouchableOpacity style={styles.addTextButton} onPress={addTextToCard}>
+        <Text style={styles.addTextButtonText}>Add Text</Text>
+      </TouchableOpacity>
 
-      
       <TouchableOpacity onPress={pickImage} style={styles.imageButton}>
         <Text style={styles.imageButtonText}>Add an Image</Text>
       </TouchableOpacity>
     </View>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
@@ -90,10 +90,11 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: 20,
-    color: "#fff",
+    color: "#000",
   },
   card: {
     height: 500,
+    flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 2,
@@ -102,6 +103,16 @@ const styles = StyleSheet.create({
     padding: 20,
     marginBottom: 20,
     backgroundColor: "#E8AD",
+  },
+  cardLeft: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  cardRight: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   cardText: {
     color: "#333",
@@ -126,26 +137,39 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginBottom: 10,
   },
-  imageButton: {
-    borderWidth: 2,
-    borderColor: "#FF00FF",
-    padding: 20,
-    borderRadius: 30,
-    backgroundColor: "#FDD7E4",
+  fontButton: {
+    width: "35%",
+    padding: 10,
     borderRadius: 5,
+    backgroundColor: "#FFC107",
     alignItems: "center",
+    marginHorizontal: 5,
   },
-  imageButtonText: {
+  fontButtonText: {
     color: "#000",
     fontWeight: "bold",
   },
-  Button: {
-    borderWidth: 2,
-    borderColor: "#FF00FF",
-    padding: 20,
-    borderRadius: 30,
-    backgroundColor: "#FDD7E4",
+  addTextButton: {
+    marginVertical: 10,
+    width: "30%",
+    padding: 12,
     borderRadius: 5,
+    backgroundColor: "#2196F3",
     alignItems: "center",
+  },
+  addTextButtonText: {
+    color: "#fff",
+    fontWeight: "bold",
+  },
+  imageButton: {
+    marginTop: 10,
+    padding: 12,
+    borderRadius: 5,
+    backgroundColor: "#4CAF50",
+    alignItems: "center",
+  },
+  imageButtonText: {
+    color: "#fff",
+    fontWeight: "bold",
   },
 });
