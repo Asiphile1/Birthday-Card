@@ -100,4 +100,6 @@ Here's a breakdown of the main parts of the app:
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-screenshots
+# screenshots
+![Screenshot (35)](https://github.com/user-attachments/assets/f58fc3ba-8ef9-4f83-a6b2-64ced9f9aacb)
+![Screenshot (36)](https://github.com/user-attachments/assets/6355703d-daca-42e3-948f-8734035e103c)
