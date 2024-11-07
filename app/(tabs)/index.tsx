@@ -90,9 +90,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: 20,
+    color: "#fff",
   },
   card: {
-    height: 300,
+    height: 500,
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 2,
