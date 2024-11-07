@@ -40,10 +40,14 @@ export default function App() {
       <Text style={styles.title}>Create Your Birthday Card</Text>
 
       <View style={styles.card}>
-        {image && <Image source={{ uri: image }} style={styles.cardImage} />}
-        <Text style={[styles.cardText, { fontSize: fontSize }]}>
-          {cardText}
-        </Text>
+        <View style={styles.cardLeft}>
+          {image && <Image source={{ uri: image }} style={styles.cardImage} />}
+        </View>
+        <View style={styles.cardRight}>
+          <Text style={[styles.cardText, { fontSize: fontSize }]}>
+            {cardText}
+          </Text>
+        </View>
       </View>
 
       <TextInput
@@ -92,12 +96,17 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     color: "#000",
   },
+
   card: {
     height: 500,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    borderWidth: 2,
+    // padding: 10,
+    borderWidth: 1,
+    // borderRadius: 8,
+    margin: 10,
+    // borderWidth: 2,
     borderColor: "#FF00FF",
     borderRadius: 30,
     padding: 20,
@@ -110,20 +119,38 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   cardRight: {
-    flex: 1,
+    flex: 2, // The text will take up this space
     justifyContent: "center",
-    alignItems: "center",
-  },
-  cardText: {
-    color: "#333",
-    textAlign: "center",
+    paddingLeft: 10, // Space between the image and the text
   },
   cardImage: {
-    width: "100%",
-    height: "80%",
+    width: "100%", 
+    height: 500, 
+    // resizeMode: "contain", 
     borderRadius: 10,
     marginBottom: 10,
   },
+  cardText: {
+    fontSize: 16, 
+    color: "#333",
+    textAlign: "center",
+  },
+
+  // card: {
+  //   height: 500,
+  //   flexDirection: "row",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   borderWidth: 2,
+  //   borderColor: "#FF00FF",
+  //   borderRadius: 30,
+  //   padding: 20,
+  //   marginBottom: 20,
+  //   backgroundColor: "#E8AD",
+  // },
+
+  
+  
   input: {
     borderWidth: 2,
     borderColor: "#FF00FF",
