@@ -2,6 +2,8 @@
 
 This is a React Native app that allows users to create custom birthday cards by adding images, text, and adjusting font sizes. The app includes features such as selecting an image from the gallery, editing text, and formatting the card for a personalized birthday greeting.
 
+hosted link: https://birthday-card-eta-virid.vercel.app/
+
 ## Table of Contents
 
 * Introduction
